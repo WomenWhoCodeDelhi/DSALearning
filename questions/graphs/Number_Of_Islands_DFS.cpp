@@ -1,8 +1,17 @@
 // Link to question : https://leetcode.com/problems/number-of-islands/
 
-// DFS Solution
+// Algorithm used : DFS 
 
-// Homework : Do the same problem using BFS.
+// Time Complexity : O(m * n) 
+// How ?
+// For DFS, Time complexity = O(V + E)
+// here V = m * n, E ~ 4 * m * n
+// therefore, Time Complexity = O(m * n)
+
+// Space complexity : O(m * n) 
+// How ?
+// We are taking space for visited array [ = O(V) ] and dfs recursive stack [ = O(V) ]
+// and V = m * n
 
 class Solution {
     void dfs(vector<vector<char>>& grid, vector<vector<int>>& vis, int i, int j){
@@ -39,3 +48,7 @@ public:
 // every cell grid[i][j] is equivalent to a graph node
 // if node value = 1 : island
 // otherwise ignore
+
+
+// Homework : Do the same problem using BFS.
+
