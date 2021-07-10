@@ -40,7 +40,7 @@ int main() {
     }
     cout<<"\n"<<components<<"\n";
     // if node a is reachble from node b
-    // O(1) time avg
+    // O(1) time avg - for optimised impl of DSU
     
     return 0;
 }
